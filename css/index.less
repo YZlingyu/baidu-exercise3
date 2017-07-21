@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+@grey: #CCCCCC;
+@white: #FFFFFF;
+//default
+.grey{
+    background-color: @grey;
+    height: 35px;
+    padding: 0 20px;
+    text-align: center;
+}
+.footer{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+#one{
+    display: none;
+}
+.container-add{
+    #one;
+}
+.btn{  
+    background-color: @grey; 
+    height: 30px;
+    border: 1px solid #666666;
+    vertical-align: middle;
+    margin-top: 2px;
+    font-weight: bold;
+ }   
+.btn(@radius:0px) {  
+    -moz-border-radius: @radius;   
+    -webkit-border-radius: @radius;   
+    border-radius: @radius;   
+ }   
+.p1{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    line-height: 35px;
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+.row0{
+    margin:0;
+}
+.row1{
+    .row0; 
+    border: 1px solid @grey;
+    margin-bottom: 5px;
+    position: relative;
+}
+.mask1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: @grey;
+    display: flex;
+    justify-content: space-around;
+    visibility: hidden;
+}
+.btn3{
+    background-color: @grey;
+}
+#cancel{
+    display: none;
+}
+#done{
+    #cancel;
+}
+.mask2{
+    .mask1;
+}
+.start{
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent; 
+    border-left: 20px solid red; 
+    border-bottom: 10px solid transparent; 
+    margin-top: 20px;
+}
+
+//rank bar
+.row-pink{
+    .row0;
+    background-color: #FFECEF;
+}
+.start2{
+    .start;
+    border-left: 20px solid #CCCCCC; 
+    display: inline-block;
+    margin: 10px;
+}
+.row-blue{
+    .row0;
+    background-color: aliceblue;
+    border-top: 1px solid @grey ;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.p3{
+    line-height: 40px;
+    vertical-align: top;
+}
+.red{
+    .circle;
+    background-color: red;
+}
+.yellow{
+    .circle;
+    background-color: yellow;
+}
+.green{
+    .circle;
+    background-color: green;
+}
+.triangle1{
+    width: 10px;
+    height: 20px;
+    margin: 10px;
+    background-color: @grey;
+    display: inline-block;
+}
+.triangle2{
+    width: 20px;
+    height: 10px;
+    margin: 10px;
+    margin-top: 20px;
+    background-color: @grey;
+    display: inline-block;
+}
+.triangle11{
+    .triangle1;
+    background-color: green;
+}
+.triangle21{
+    .triangle2;
+    background-color: yellow;
+    color:blue
+}
+
+//edit
+.btn2{
+    width: 100%;
+    background-color: @white;
+    border: 1px solid #CCCCCC;
+    padding: 0px 3px;
+    box-sizing: border-box;
+}
+#row-blue1{
+    .row-blue;
+    background-color: @white;
+    padding:3px 0;
+    border-bottom: 1px solid @grey;
+}
+#row-pink1{
+    #row-blue1;
+}
+.row2{
+    width: 100%;
+    padding: 10px 5px;
+    text-align: center;
+}
+.textarea{
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid @grey;
+    resize: none;
+}
