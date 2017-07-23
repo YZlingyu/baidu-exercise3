@@ -9,6 +9,7 @@
 		<script src="../js/jquery-1.11.1.min.js"></script>
 		<script src="../js/bootstrap.min.js"></script>
 		<script src="../js/storage.js"></script>
+		<script src="../js/Hammer.js"></script>
 		<script src="../js/index.js"></script>
 	</head>
 	<body>
@@ -121,20 +122,20 @@
 		<!----------add----------->
 		<div class="container-add">
 			<div class="row row-pink" id="row-pink1">
-			<div class="col-xs-4 col-md-4" id="super">
-				<button class="btn2">
+			<div class="col-xs-4 col-md-4" id="super" >
+				<button class="btn2" id="advanced"onclick="rank(this.id)">
 					<div class="red"></div>
 					<span class="p3">高级</span>
 				</button>
 			</div>
 			<div class="col-xs-4 col-md-4" id="medium">
-				<button class="btn2">
+				<button class="btn2" id="medium" onclick="rank(this.id)">
 					<div class="yellow"></div>
 					<span class="p3">中优</span>
 				</button>
 			</div>
 			<div class="col-xs-4 col-md-4" id="low">
-				<button class="btn2">
+				<button class="btn2" onclick="rank(this.id)">
 					<div class="green"></div>
 					<span class="p3">低级</span>
 				</button>
@@ -143,19 +144,19 @@
 		</div>
 		<div class="row row-blue" id="row-blue1">
 			<div class="col-xs-4 col-md-4">
-				<button class="btn2">
+				<button class="btn2" id="underdoing" onclick="degree(this.id)">
 					<div class="start2"></div>
 					<span class="p3">进行中</span>
 				</button>
 			</div>
 			<div class="col-xs-4 col-md-4">
-				<button class="btn2">
+				<button class="btn2" id="waiting" onclick="degree(this.id)">
 					<div class="triangle1"></div>
 					<span class="p3">待办</span>
 				</button>
 			</div>
 			<div class="col-xs-4 col-md-4">
-				<button class="btn2">
+				<button class="btn2" id="over" onclick="degree(this.id)">
 					<div class="triangle2"></div>
 					<span class="p3">已完成</span>
 				</button>
@@ -173,7 +174,7 @@
 		<!---------foot bar--------->
 		<footer class="row grey footer">
 			<span class="p1" id="one-thing">OneThing</span>
-			<span class="p1">All</span>
+			<span class="p1" id="all">All</span>
 		</footer>
 	</body>
 </html>

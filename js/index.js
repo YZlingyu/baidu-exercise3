@@ -7,16 +7,7 @@ $(function(){
 		$(".container-add").css("display","none");
 	});
 	
-	//click add
-	$("#add").click(function(){
-		$("#container1").css("display","none");
-		$("#row-blue").css("display","none");
-		$("#row-pink").css("display","none");
-		$("#add").css("display","none");
-		$(".container-add").css("display","block");
-		$("#cancel").css("display","block");
-		$("#done").css("display","block");
-	});
+	
 	
 	//edit
 	$("edit").click(function(){
@@ -30,7 +21,7 @@ $(function(){
 	});
 	
 	
-	let slider = {
+	/*let slider = {
 	    //判断设备是否支持touch事件
 	    touch:('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch,
 	    slider:$(".row1"),
@@ -103,4 +94,4 @@ $(function(){
 	};
 	
 	slider.init();
-})
+*/})
